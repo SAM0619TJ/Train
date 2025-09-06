@@ -4,8 +4,6 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include "Vector.h"
-#include "gtest/gtest.h"
-#include "vector.h"
 using namespace algebra;
 
 TEST(VectorTest, Zeros) {
