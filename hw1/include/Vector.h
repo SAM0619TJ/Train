@@ -8,5 +8,6 @@
 using std::size_t;
 namespace algebra{
     using Vector = std::vector<double>;
+    // TODO 在这里声明你需要实现的函数
 }
 #endif //VECTOR_H

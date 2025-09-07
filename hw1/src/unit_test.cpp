@@ -6,6 +6,9 @@
 #include "Vector.h"
 using namespace algebra;
 
+// 要测试哪个函数，就把对应的测试取消注释
+
+/*
 TEST(VectorTest, Zeros) {
     Vector v = zeros(5);
     ASSERT_EQ(v.size(), 5);
@@ -21,7 +24,10 @@ TEST(VectorTest, Ones) {
 TEST(VectorTest, Random) {
     Vector v = random(10, -2, 2);
     ASSERT_EQ(v.size(), 10);
-    for (auto x : v) EXPECT_GE(x, -2), EXPECT_LT(x, 2);
+    for (auto x : v) {
+    EXPECT_GE(x, -2);
+    EXPECT_LT(x, 2);
+    }
     EXPECT_THROW(random(5, 3, 1), std::logic_error);
 }
 
@@ -90,4 +96,4 @@ TEST(VectorTest, Concatenate) {
     EXPECT_DOUBLE_EQ(res[0], 1);
     EXPECT_DOUBLE_EQ(res[2], 3);
     EXPECT_DOUBLE_EQ(res[4], 5);
-}
+}*/
